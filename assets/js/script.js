@@ -38,6 +38,50 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //CURSOR ANIMATION
 
+setTimeout(() => {
+  new Typed('.auto-type-title', {
+    strings: ["Yarlin Lynn"],
+    typeSpeed: 150,
+    backSpeed: 100,
+    loop: false,
+    showCursor: true
+  });
+}, 2500);
+
+setTimeout(() => {
+  new Typed('.auto-type-profession', {
+    strings: ["Software Engineer", "Specialize in Frontend", "Learning Backend", "Aspiring Fullstack Developer"],
+    typeSpeed: 100,
+    backSpeed: 50,
+    backDelay: 1500,
+    loop: true,
+    showCursor: false
+  });
+}, 3000);
+
+setTimeout(() => {
+  new Typed('.auto-type-projectText', {
+    strings: ["View a few projects I've worked on"],
+    typeSpeed: 100,
+    backSpeed: 50,
+    backDelay: 1500,
+    loop: false,
+    showCursor: false
+  });
+}, 5000);
+
+setTimeout(() => {
+  new Typed('.auto-type-description', {
+    strings: ["Software engineer with hands-on experience in HTML, CSS, Tailwind CSS, Bootstrap, and JavaScript, I specialize in crafting responsive and user-friendly web interfaces. Currently advancing my skills to become a full-stack engineer, I'm eager to build dynamic, interactive websites that captivate users. To achieve this, I'm diving into GSAP for advanced animations, React and React Native for robust front-end development, backend technologies for seamless data integration."],
+    typeSpeed: 70,
+    backSpeed: 50,
+    backDelay: 1500,
+    loop: false,
+    showCursor: false
+  });
+}, 2000);
+
+
 const keyframes = [
     { offsetDistance: "0%" },
     { offsetDistance: "26.624108%" },
