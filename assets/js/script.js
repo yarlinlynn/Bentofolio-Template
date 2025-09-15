@@ -59,20 +59,42 @@ setTimeout(() => {
   });
 }, 3000);
 
+// setTimeout(() => {
+//   new Typed('.auto-type-projectText', {
+//     strings: ["View a few projects I've worked on"],
+//     typeSpeed: 100,
+//     backSpeed: 50,
+//     backDelay: 1500,
+//     loop: false,
+//     showCursor: false
+//   });
+// }, 5000);
+
 setTimeout(() => {
-  new Typed('.auto-type-projectText', {
-    strings: ["View a few projects I've worked on"],
-    typeSpeed: 100,
+  new Typed('.auto-type-description', {
+    strings: ["Software engineer with hands-on experience in HTML, CSS, Tailwind CSS, Bootstrap, and JavaScript, I specialize in crafting responsive and user-friendly web interfaces. Currently advancing my skills to become a full-stack engineer, I'm eager to build dynamic, interactive websites that captivate users. To achieve this, I'm diving into GSAP for advanced animations, React and React Native for robust front-end development, backend technologies for seamless data integration."],
+    typeSpeed: 70,
     backSpeed: 50,
     backDelay: 1500,
     loop: false,
     showCursor: false
   });
-}, 5000);
+}, 2000);
 
 setTimeout(() => {
-  new Typed('.auto-type-description', {
-    strings: ["Software engineer with hands-on experience in HTML, CSS, Tailwind CSS, Bootstrap, and JavaScript, I specialize in crafting responsive and user-friendly web interfaces. Currently advancing my skills to become a full-stack engineer, I'm eager to build dynamic, interactive websites that captivate users. To achieve this, I'm diving into GSAP for advanced animations, React and React Native for robust front-end development, backend technologies for seamless data integration."],
+  new Typed('.auto-type-Project-title', {
+    strings: ["Projects"],
+    typeSpeed: 70,
+    backSpeed: 50,
+    backDelay: 1500,
+    loop: false,
+    showCursor: true
+  });
+}, 1000);
+
+setTimeout(() => {
+  new Typed('.auto-type-projectText', {
+    strings: ["Here are a few personal projects I've worked on"],
     typeSpeed: 70,
     backSpeed: 50,
     backDelay: 1500,

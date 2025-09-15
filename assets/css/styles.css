@@ -67,9 +67,10 @@ li { list-style: none; }
 .bento-grid {
     display: grid;
     gap: 1.25rem;
+    /* grid-area: ; */
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
     .bento-grid,
     .projects-grid {
         grid-template-columns: repeat(9, minmax(0, 1fr));
@@ -110,13 +111,21 @@ li { list-style: none; }
 
 .wrapper {
     background-color: var(--yellow);
-    padding: 2.5rem;
+    padding-block: 2.5rem;
     display: grid;
     place-content: center;
     gap: 1.25rem;
 }
 
-.name,
+.name{
+    background-color: var(--dark-blue);
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: .75rem 1.25rem;
+    text-align: center;
+}
+
 .profession {
     background-color: var(--dark-blue);
     color: white;
@@ -131,8 +140,11 @@ li { list-style: none; }
 .profession { font-size: medium; }
 
 .desciptive-text {
-    padding: 5rem 1rem 0;
-    color: var(--dark-blue);
+    /* padding: 5rem 1rem 0; */
+    /* color: var(--dark-blue); */
+    padding-inline: 1rem;
+    padding-block-end: 1.5rem;
+    color: var(--lightgray);
 }
 
 .cursor {
@@ -156,6 +168,10 @@ li { list-style: none; }
     position: relative;
 }
 
+.projects-wrapper div { margin-bottom: 1rem; }
+
+.projects-wrapper div .auto-type-projectText { color: var(--lightgray); }
+
 .projects-wrapper,
 #resume { background-color: var(--cyan); } 
 
@@ -163,11 +179,19 @@ li { list-style: none; }
     background-color: var(--orange); 
 }
 
+#project-svg .banner {
+    width: 35%;
+    margin: 1rem auto;
+}
+
 .resume-wrapper svg { width: 70%; }
 
 #education { background-color: var(--light-blue); }
 
-#certificates { background-color: var(--cyan); }
+#certificates { 
+    background-color: var(--cyan); 
+    display: none;
+}
 
 .documents-wrapper svg { margin: -4rem 0 -1rem; }
 
@@ -193,13 +217,15 @@ li { list-style: none; }
 }
 
 .socials li:nth-child(2),
-.socials li:nth-child(3) {
+.socials li:nth-child(3),
+.socials li:nth-child(6)  {
     background-color: var(--yellow);
     color: var(--cyan);
 }
 
 .socials li:nth-child(1),
-.socials li:nth-child(4) {
+.socials li:nth-child(4),
+.socials li:nth-child(5)  {
     background-color: var(--dark-blue);
     color: var(--dark-pink);
 }
@@ -213,7 +239,7 @@ li { list-style: none; }
     margin: 0 5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
     #wrapper {
         grid-column: 4 / 8;
         grid-row: 4 / 7;
@@ -247,11 +273,19 @@ li { list-style: none; }
         position: relative;
     }
 
-    #project-svg .banner {
+    /* #project-svg .banner {
         position: absolute;
         bottom: 15px;
         left: -6px;
+    } */
+
+    #project-svg .banner {
+        position: relative;
+        top: 20px;
+        left: -5px;
     }
+
+    .desciptive-text { padding: 3.5rem 1rem 0; }
 
     #education {
         grid-column: 7 / 10;
@@ -266,6 +300,7 @@ li { list-style: none; }
 
     .eduaction-wrapper svg {
         width: 76%;
+        margin-top: 1.7rem;
     }
 
     #resume {
@@ -286,6 +321,7 @@ li { list-style: none; }
 
 
     #certificates {
+        display: block;
         grid-column: 6 / 7;
         grid-row: 1 / 4;
     }
@@ -296,9 +332,10 @@ li { list-style: none; }
     }
 
     #certificates .svg-wrapper svg { 
-        width: 70%;
-        margin-left: 2rem;
-        margin-top: 0;
+        width: 100%;
+        margin: 2.5rem auto;
+        text-align: center;
+
     }
 
     #contact {
@@ -338,9 +375,19 @@ li { list-style: none; }
     }
 
     .socials { 
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         margin: 0;
         padding-right: 1rem;
+    }
+
+    .socials li:nth-child(3) {
+        background-color: var(--dark-blue);
+        color: var(--dark-pink);
+    }
+
+    .socials li:nth-child(4) {
+        background-color: var(--yellow);
+        color: var(--cyan);
     }
 }
 
@@ -358,8 +405,7 @@ li { list-style: none; }
     gap: 1.25rem;
 }
 
-.title,
-.text {
+.title {
     background-color: var(--light-pink);
     color: var(--dark-pink);
     font-weight: 600;
@@ -367,6 +413,16 @@ li { list-style: none; }
     padding: .75rem 1.25rem;
     text-align: center;
     margin: 0 auto;
+}
+
+.text-box {
+    background-color: var(--light-pink);
+    color: var(--dark-pink);
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: .75rem 1.25rem;
+    text-align: center;
+    margin: 0 auto;    
 }
 
 .figure {
@@ -417,7 +473,7 @@ li { list-style: none; }
     background-image: url(/assets/images/Bookmark\ Page.jpg); 
 } */
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
 
     .container {
         padding: 0;
