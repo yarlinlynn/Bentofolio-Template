@@ -72,7 +72,7 @@ setTimeout(() => {
 
 setTimeout(() => {
   new Typed('.auto-type-description', {
-    strings: ["Software engineer with hands-on experience in HTML, CSS, Tailwind CSS, Bootstrap, and JavaScript, I specialize in crafting responsive and user-friendly web interfaces. Currently advancing my skills to become a full-stack engineer, I'm eager to build dynamic, interactive websites that captivate users. To achieve this, I'm diving into GSAP for advanced animations, React and React Native for robust front-end development, backend technologies for seamless data integration."],
+    strings: ["I’m a software engineer specializing in frontend development, focused on creating clean, functional, and user-friendly websites that bring ideas to life. As I continue learning backend technologies to grow into a fullstack developer, I’m also exploring GSAP to integrate modern, interactive animations that elevate user experiences. My goal is to provide complete web solutions as a freelance developer—designing, building, and delivering fullstack websites while connecting with clients who value professional, reliable, and creative digital experiences."],
     typeSpeed: 70,
     backSpeed: 50,
     backDelay: 1500,
