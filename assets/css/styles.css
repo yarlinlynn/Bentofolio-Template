@@ -453,12 +453,12 @@ li { list-style: none; }
     top: 50%;
 }
 
-/* #project-1 .figure {
-    background-image: url(/assets/images/Sneaker\ Factory.png);
+#project-1 .figure {
+    background-image: url(/assets/images/Glowing.jpg);
 }
 
 #project-2 .figure {
-    background-image: url(/assets/images/Glowing.jpg);
+    background-image: url(/assets/images/Sunnside\ Agency.png);
 }
 
 #project-3 .figure {
@@ -466,12 +466,20 @@ li { list-style: none; }
 }
 
 #project-4 .figure {
-    background-image: url(/assets/images/Social\ Media\ Dashboard.png);
+    background-image: url(/assets/images/Sneaker\ Factory.png);
+}
+
+#project-5 .figure {
+    background-image: url(/assets/images/Bookmark\ Page.jpg); 
 }
 
 #project-6 .figure {
-    background-image: url(/assets/images/Bookmark\ Page.jpg); 
-} */
+    background-image: url(/assets/images/Kanban\ Board.png); 
+    background-size: cover;
+    background-position: 0 0;
+}
+
+#project_svg { display: none; }
 
 @media (min-width: 1000px) {
 
@@ -558,6 +566,7 @@ li { list-style: none; }
         grid-column: 8 / 10;
         grid-row: 8 / 10;
         background: var(--dark-pink);
+        display: block;
     }
 
 }
