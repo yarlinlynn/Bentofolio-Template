@@ -73,6 +73,10 @@ button:focus-visible {
   #REUSED STYLE
 \*-----------------------------------*/
 
+.grid-wrapper{
+    display: grid;
+}
+
 .banner {
     background-color: var(--dark-blue);
     line-height: 2.25rem;
@@ -86,8 +90,14 @@ button:focus-visible {
     font-size: 1.75rem;
 }
 
-.grid-wrapper{
-    display: grid;
+#banner {
+    background-color: var(--light-pink);
+    padding: .75rem 1.25rem;
+    color: var(--dark-pink);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*-----------------------------------*\
@@ -148,7 +158,7 @@ button:focus-visible {
     text-align: center;
     padding-block: 1.5rem;
     color: white;
- }
+}
 
 /*-----------------------------------*\
 #PROJECTS WRAPPER
@@ -248,9 +258,18 @@ button:focus-visible {
 
 .title-text { font-size: 1.3rem; }
 
-
 #project-1, #project-4 { background: var(--dark-pink); }
 
 #project-2, #project-5 { background: var(--green-02); }
 
 #project-3 { background: var(--green-01); }
+
+/*-----------------------------------*\
+#EDUCATION PAGE GRID
+\*-----------------------------------*/
+
+#job-1, #job-4 { background: var(--dark-pink); }
+
+#job-2, #job-5 { background: var(--green-02); }
+
+#job-3 { background: var(--green-01); }
