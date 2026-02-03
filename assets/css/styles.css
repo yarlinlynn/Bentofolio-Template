@@ -73,7 +73,22 @@ button:focus-visible {
   #REUSED STYLE
 \*-----------------------------------*/
 
+.banner {
+    background-color: var(--dark-blue);
+    line-height: 2.25rem;
+    padding: .75rem 1.25rem;
+    z-index: 2;
+}
 
+.banner h3 {
+    color: var(--yellow);
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
+.grid-wrapper{
+    display: grid;
+}
 
 /*-----------------------------------*\
 #BENTO GRID LAYOUT
@@ -98,44 +113,117 @@ button:focus-visible {
 #WRAPPER (AUTO TYPING)
 \*-----------------------------------*/
 
+#wrapper { background: var(--yellow); }
 
+.auto-typing-container {
+    padding-block: 2.5rem;
+    display: grid;
+    place-content: center;
+    gap: 1.25rem;
+}
+
+.name, .my-title {
+    background: var(--dark-blue);
+    color: var(--lightgray);
+    padding: .5rem 1.25rem;
+}
+
+.auto-type-name {
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.auto-type-title { 
+    font-size: 18px; 
+    text-align: center;}
 
 /*-----------------------------------*\
 #INFO WRAPPER (DESCRIPTION)
 \*-----------------------------------*/
 
+#info-wrapper { background: var(--cyan); }
 
+.about-me {
+    text-align: center;
+    padding-block: 1.5rem;
+    color: white;
+ }
 
 /*-----------------------------------*\
 #PROJECTS WRAPPER
 \*-----------------------------------*/
 
-
+#projects-wrapper { background: var(--light-blue); }
 
 /*-----------------------------------*\
 #WORK EXPERIENCE WRAPPER
 \*-----------------------------------*/
 
-
+#work-wrapper { background: var(--orange); }
 
 /*-----------------------------------*\
 #RESUME WRAPPER
 \*-----------------------------------*/
 
+#resume-wrapper { background: var(--cyan); }
 
+#resume-wrapper svg {
+    width: 80%;
+    margin: auto;
+    margin-top: -1.5rem;
+}
 
 /*-----------------------------------*\
 #EDUCATION WRAPPER
 \*-----------------------------------*/
 
-
+#education-wrapper { background: var(--cyan); }
 
 /*-----------------------------------*\
 #CONTACT WRAPPER
 \*-----------------------------------*/
 
+#contact-wrapper { background: var(--light-blue); }
 
+.contact-me-text {
+    font-family: "Afacad", sans-serif;
+    font-size: 15px;
+}
+
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: .75rem;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+}
+
+.social-links a {
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--dark-blue);
+    font-size: xx-large;
+}
+
+.social-links a:nth-child(1), 
+.social-links a:nth-child(3), 
+.social-links a:nth-child(5) { background-color: var(--dark-blue); }
+
+.social-links a:nth-child(2), 
+.social-links a:nth-child(4), 
+.social-links a:nth-child(6) { background-color: var(--yellow); }
+
+.social-links svg {
+    width: 1.5rem;
+}
 
 /*-----------------------------------*\
 #SVG WRAPPER
 \*-----------------------------------*/
+
+#svg-wrapper { background: var(--orange); }
+
+#svg-wrapper svg {
+    width: 50%;
+    margin: 0 auto;
+}
