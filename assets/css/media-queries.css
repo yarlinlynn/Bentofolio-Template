@@ -175,6 +175,13 @@
         grid-row: 7 / 10;
     }
 
+    #project-6 {
+        grid-column: 8 / 10;
+        grid-row: 7 / 10;
+        background: var(--green-01);
+    }
+
+
     #job-1 {
         grid-column: 1 / 5;
         grid-row: 1 / 4;
