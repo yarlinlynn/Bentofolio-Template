@@ -1,11 +1,12 @@
 # 🌐 Portfolio Template
 
 Benfolio is a clean, modern, and animated **HTML/CSS/JavaScript portfolio template** designed for developers who want a simple but eye-catching personal site.  
-This project is built to be **easy to customize, deploy, and reuse** as a live portfolio.
+This project is built to be **easy to customize, deploy, and reuse** as a live portfolio. 
 
+📸 see live project <a href="https://benfolio-project.netlify.app/">here</a>
 
-### 📸 Demo Screenshot
-
+<br/>
+### 
 >Screenshot coming soon ...
 
 <br/>
